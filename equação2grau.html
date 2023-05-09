@@ -1,0 +1,26 @@
+<!doctype html><html><head></head><body><script type="text/javascript">/* ENTRADAS */
+var a = prompt("Tendo uma equação ax²+bx+c=0, iremos usar Báskhara." +
+ "\nDigite o valor de a: ")
+ var b = prompt("Digite o valor de b: ")
+ var c = prompt("Digite o valor de c: ")
+
+/* Converter em número */
+a = Number(a)
+b = Number(b)
+c = Number(c)
+
+//Fórmula para resolver a equação do 2 grau
+//x=(-b +-sqrt(b²-4ac))/2a
+//Assumindo que delta é b²-4ac
+
+var delta = (b*b) - (4*a*c)
+
+var x1 = (-b + Math.sqrt(delta)) / (2 * a)
+var x2 = (-b - Math.sqrt(delta)) / (2 * a)
+
+//Saída:
+console.log("Para a seguinte equação do 2° grau: " + a + "x² + " + b + "x +" + c + " = 0\n" + "As duas raízes da equação serão: "
++ "\nx' = " + x1 + "\nx\" = " + x2)
+
+
+</script></body><html>
